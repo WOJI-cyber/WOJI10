@@ -1,0 +1,6 @@
+{
+  "name": "회의자료 생성기",
+  "description": "지방자치단체 보건소 공무원을 위한 출처 기반 AI 공문·회의자료 9종 자동 생성 웹앱",
+  "requestFramePermissions": [],
+  "majorCapabilities": ["MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"]
+}
