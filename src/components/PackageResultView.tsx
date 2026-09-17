@@ -61,7 +61,7 @@ const TAB_CONFIGS: TabConfig[] = [
     key: "meeting_doc",
     label: "회의자료 (개조식)",
     badge: "○, -, * 표준",
-    icon: <FileText className="w-4 h-4 text-blue-600" />,
+    icon: <FileText className="w-4 h-4 text-emerald-700" />,
     description: "보건소 표준 개조식 문체 및 핵심 통계 표가 포함된 공식 회의자료",
   },
   {
@@ -117,7 +117,7 @@ const TAB_CONFIGS: TabConfig[] = [
     key: "official_notice_draft",
     label: "공문 초안",
     badge: "시행문 양식",
-    icon: <Send className="w-4 h-4 text-blue-700" />,
+    icon: <Send className="w-4 h-4 text-emerald-700" />,
     description: "표준 공문서 규정에 맞춘 개최 알림 및 결과 통보 시행문",
   },
 ];
@@ -213,10 +213,10 @@ export const PackageResultView: React.FC<PackageResultViewProps> = ({
                 key={idx}
                 type="button"
                 onClick={() => handleCitationClick(match)}
-                className="inline-flex items-center gap-1 mx-1 px-1.5 py-0.5 rounded text-[11px] font-semibold bg-blue-50 text-blue-800 border border-blue-200 hover:bg-blue-100 hover:border-blue-300 transition-colors align-baseline cursor-pointer"
+                className="inline-flex items-center gap-1 mx-1 px-1.5 py-0.5 rounded text-[11px] font-semibold bg-emerald-50 text-emerald-900 border border-emerald-200 hover:bg-emerald-100 hover:border-emerald-300 transition-colors align-baseline cursor-pointer"
                 title="클릭 시 우측 근거 문서 미리보기로 이동"
               >
-                <Bookmark className="w-3 h-3 text-blue-600 shrink-0" />
+                <Bookmark className="w-3 h-3 text-emerald-700 shrink-0" />
                 <span>{part}</span>
               </button>
             );
@@ -244,7 +244,7 @@ export const PackageResultView: React.FC<PackageResultViewProps> = ({
       <div className="bg-white p-4 rounded-xl border border-slate-200 shadow-xs flex flex-col md:flex-row items-start md:items-center justify-between gap-3">
         <div className="min-w-0">
           <div className="flex flex-wrap items-center gap-2 mb-1">
-            <span className="px-2 py-0.5 rounded text-xs font-bold bg-blue-100 text-blue-800">
+            <span className="px-2 py-0.5 rounded text-xs font-bold bg-emerald-100 text-emerald-800">
               {meetingInfo.type}
             </span>
             <span className="text-xs text-slate-500 font-medium">
@@ -286,10 +286,10 @@ export const PackageResultView: React.FC<PackageResultViewProps> = ({
           <button
             onClick={handleDownloadHwp}
             id="btn-download-hwp"
-            className="inline-flex items-center gap-1.5 px-3.5 py-2 rounded-lg text-xs font-bold bg-blue-900 hover:bg-blue-800 text-white transition-colors shadow-xs"
+            className="inline-flex items-center gap-1.5 px-3.5 py-2 rounded-lg text-xs font-bold bg-emerald-800 hover:bg-emerald-700 text-white transition-colors shadow-xs"
             title="한글(HWP) 프로그램에서 바로 열리는 문서 파일 다운로드"
           >
-            <Download className="w-4 h-4 text-blue-200" />
+            <Download className="w-4 h-4 text-emerald-200" />
             <span>한글(HWP) 문서 다운로드</span>
           </button>
 
@@ -321,7 +321,7 @@ export const PackageResultView: React.FC<PackageResultViewProps> = ({
           <div className="bg-white rounded-xl border border-slate-200 shadow-xs overflow-hidden">
             <div className="p-2 border-b border-slate-200 bg-slate-50/80 flex items-center justify-between">
               <span className="text-xs font-bold text-slate-800 px-2 flex items-center gap-1.5">
-                <Sparkles className="w-3.5 h-3.5 text-blue-600" />
+                <Sparkles className="w-3.5 h-3.5 text-emerald-600" />
                 <span>맞춤형 회의 패키지 9종</span>
               </span>
               <div className="flex items-center gap-1">
@@ -330,7 +330,7 @@ export const PackageResultView: React.FC<PackageResultViewProps> = ({
                   onClick={() => setViewMode("edit")}
                   className={`px-2.5 py-1 text-xs font-semibold rounded-md transition-colors ${
                     viewMode === "edit"
-                      ? "bg-white text-blue-900 shadow-2xs border border-slate-200"
+                      ? "bg-white text-emerald-900 shadow-2xs border border-slate-200"
                       : "text-slate-500 hover:text-slate-900"
                   }`}
                 >
@@ -341,7 +341,7 @@ export const PackageResultView: React.FC<PackageResultViewProps> = ({
                   onClick={() => setViewMode("preview")}
                   className={`px-2.5 py-1 text-xs font-semibold rounded-md transition-colors ${
                     viewMode === "preview"
-                      ? "bg-white text-blue-900 shadow-2xs border border-slate-200"
+                      ? "bg-white text-emerald-900 shadow-2xs border border-slate-200"
                       : "text-slate-500 hover:text-slate-900"
                   }`}
                 >
@@ -362,11 +362,11 @@ export const PackageResultView: React.FC<PackageResultViewProps> = ({
                     id={`tab-${tab.key}`}
                     className={`flex items-center gap-2 px-3 py-2 rounded-lg text-xs font-bold whitespace-nowrap transition-all shrink-0 ${
                       isActive
-                        ? "bg-blue-900 text-white shadow-xs"
+                        ? "bg-emerald-800 text-white shadow-xs"
                         : "text-slate-600 hover:text-slate-900 hover:bg-slate-100"
                     }`}
                   >
-                    <span className={isActive ? "text-blue-200" : ""}>{tab.icon}</span>
+                    <span className={isActive ? "text-emerald-200" : ""}>{tab.icon}</span>
                     <span>{tab.label}</span>
                   </button>
                 );
@@ -432,7 +432,7 @@ export const PackageResultView: React.FC<PackageResultViewProps> = ({
                 <button
                   type="button"
                   onClick={insertCitationChip}
-                  className="inline-flex items-center gap-1 px-2 py-1 rounded bg-blue-50 text-blue-700 hover:bg-blue-100 border border-blue-200 text-[11px] font-semibold"
+                  className="inline-flex items-center gap-1 px-2 py-1 rounded bg-emerald-50 text-emerald-800 hover:bg-emerald-100 border border-emerald-200 text-[11px] font-semibold"
                   title="출처 표기 태그 삽입"
                 >
                   <Bookmark className="w-3 h-3" />
@@ -457,7 +457,7 @@ export const PackageResultView: React.FC<PackageResultViewProps> = ({
                   id="package-editor"
                   value={currentContent}
                   onChange={(e) => onUpdatePackageText(activeTab, e.target.value)}
-                  className="w-full min-h-[440px] text-xs sm:text-sm text-slate-900 leading-relaxed font-mono p-3 rounded-lg border border-slate-200 focus:outline-hidden focus:ring-2 focus:ring-blue-600 focus:border-transparent resize-y bg-slate-50/30"
+                  className="w-full min-h-[440px] text-xs sm:text-sm text-slate-900 leading-relaxed font-mono p-3 rounded-lg border border-slate-200 focus:outline-hidden focus:ring-2 focus:ring-emerald-600 focus:border-transparent resize-y bg-slate-50/30"
                   placeholder="내용이 비어 있습니다."
                 />
               ) : (
@@ -491,11 +491,11 @@ export const PackageResultView: React.FC<PackageResultViewProps> = ({
                 onClick={() => setRightPanelTab("analysis")}
                 className={`flex-1 py-2 px-2 text-xs font-bold rounded-lg transition-colors flex items-center justify-center gap-1.5 ${
                   rightPanelTab === "analysis"
-                    ? "bg-white text-blue-900 shadow-xs border border-slate-200"
+                    ? "bg-white text-emerald-900 shadow-xs border border-slate-200"
                     : "text-slate-600 hover:text-slate-900 hover:bg-slate-100"
                 }`}
               >
-                <Bookmark className="w-3.5 h-3.5 text-blue-600" />
+                <Bookmark className="w-3.5 h-3.5 text-emerald-600" />
                 <span>📌 AI 근거 분석</span>
               </button>
               <button
@@ -503,7 +503,7 @@ export const PackageResultView: React.FC<PackageResultViewProps> = ({
                 onClick={() => setRightPanelTab("quickActions")}
                 className={`flex-1 py-2 px-2 text-xs font-bold rounded-lg transition-colors flex items-center justify-center gap-1.5 ${
                   rightPanelTab === "quickActions"
-                    ? "bg-white text-blue-900 shadow-xs border border-slate-200"
+                    ? "bg-white text-emerald-900 shadow-xs border border-slate-200"
                     : "text-slate-600 hover:text-slate-900 hover:bg-slate-100"
                 }`}
               >
@@ -515,7 +515,7 @@ export const PackageResultView: React.FC<PackageResultViewProps> = ({
                 onClick={() => setRightPanelTab("sources")}
                 className={`flex-1 py-2 px-2 text-xs font-bold rounded-lg transition-colors flex items-center justify-center gap-1.5 ${
                   rightPanelTab === "sources"
-                    ? "bg-white text-blue-900 shadow-xs border border-slate-200"
+                    ? "bg-white text-emerald-900 shadow-xs border border-slate-200"
                     : "text-slate-600 hover:text-slate-900 hover:bg-slate-100"
                 }`}
               >
@@ -530,8 +530,8 @@ export const PackageResultView: React.FC<PackageResultViewProps> = ({
               {rightPanelTab === "analysis" && (
                 <div className="space-y-4">
                   {/* 회의 배경 및 현 상황 */}
-                  <div className="p-3 rounded-lg bg-blue-50/50 border border-blue-200/80 space-y-1">
-                    <div className="flex items-center gap-1.5 text-xs font-bold text-blue-900">
+                  <div className="p-3 rounded-lg bg-emerald-50/50 border border-emerald-200/80 space-y-1">
+                    <div className="flex items-center gap-1.5 text-xs font-bold text-emerald-900">
                       <span>📌 회의 배경 및 현재 상황</span>
                     </div>
                     <p className="text-xs text-slate-800 leading-relaxed">
@@ -607,7 +607,7 @@ export const PackageResultView: React.FC<PackageResultViewProps> = ({
                               >
                                 {isVerified ? "확인된 사실" : "확인 필요"}
                               </span>
-                              <span className="text-[11px] text-blue-700 font-semibold">
+                              <span className="text-[11px] text-emerald-700 font-semibold">
                                 📄 {fact.source_file} {fact.page ? `p.${fact.page}` : ""}
                               </span>
                             </div>
@@ -638,13 +638,13 @@ export const PackageResultView: React.FC<PackageResultViewProps> = ({
                       type="button"
                       disabled={isRewriting}
                       onClick={() => onQuickRewrite(activeTab, "civil_servant")}
-                      className="p-3 rounded-lg border border-slate-200 hover:border-blue-500 hover:bg-blue-50/60 bg-white text-left transition-all flex items-start gap-2.5 group shadow-2xs"
+                      className="p-3 rounded-lg border border-slate-200 hover:border-emerald-500 hover:bg-emerald-50/60 bg-white text-left transition-all flex items-start gap-2.5 group shadow-2xs"
                     >
-                      <div className="w-8 h-8 rounded-md bg-blue-100 text-blue-800 flex items-center justify-center shrink-0 font-bold text-sm">
+                      <div className="w-8 h-8 rounded-md bg-emerald-100 text-emerald-800 flex items-center justify-center shrink-0 font-bold text-sm">
                         👔
                       </div>
                       <div>
-                        <p className="text-xs font-bold text-slate-900 group-hover:text-blue-900">
+                        <p className="text-xs font-bold text-slate-900 group-hover:text-emerald-900">
                           공무원 보고서 문체로 변환
                         </p>
                         <p className="text-[11px] text-slate-500 mt-0.5">
@@ -658,7 +658,7 @@ export const PackageResultView: React.FC<PackageResultViewProps> = ({
                       type="button"
                       disabled={isRewriting}
                       onClick={() => onQuickRewrite(activeTab, "more_concise")}
-                      className="p-3 rounded-lg border border-slate-200 hover:border-blue-500 hover:bg-blue-50/60 bg-white text-left transition-all flex items-start gap-2.5 group shadow-2xs"
+                      className="p-3 rounded-lg border border-slate-200 hover:border-purple-500 hover:bg-purple-50/60 bg-white text-left transition-all flex items-start gap-2.5 group shadow-2xs"
                     >
                       <div className="w-8 h-8 rounded-md bg-purple-100 text-purple-800 flex items-center justify-center shrink-0 font-bold text-sm">
                         🪄
@@ -678,7 +678,7 @@ export const PackageResultView: React.FC<PackageResultViewProps> = ({
                       type="button"
                       disabled={isRewriting}
                       onClick={() => onQuickRewrite(activeTab, "table_format")}
-                      className="p-3 rounded-lg border border-slate-200 hover:border-blue-500 hover:bg-blue-50/60 bg-white text-left transition-all flex items-start gap-2.5 group shadow-2xs"
+                      className="p-3 rounded-lg border border-slate-200 hover:border-emerald-500 hover:bg-emerald-50/60 bg-white text-left transition-all flex items-start gap-2.5 group shadow-2xs"
                     >
                       <div className="w-8 h-8 rounded-md bg-emerald-100 text-emerald-800 flex items-center justify-center shrink-0 font-bold text-sm">
                         📊
@@ -698,7 +698,7 @@ export const PackageResultView: React.FC<PackageResultViewProps> = ({
                       type="button"
                       disabled={isRewriting}
                       onClick={() => onQuickRewrite(activeTab, "five_min_summary")}
-                      className="p-3 rounded-lg border border-slate-200 hover:border-blue-500 hover:bg-blue-50/60 bg-white text-left transition-all flex items-start gap-2.5 group shadow-2xs"
+                      className="p-3 rounded-lg border border-slate-200 hover:border-amber-500 hover:bg-amber-50/60 bg-white text-left transition-all flex items-start gap-2.5 group shadow-2xs"
                     >
                       <div className="w-8 h-8 rounded-md bg-amber-100 text-amber-800 flex items-center justify-center shrink-0 font-bold text-sm">
                         ⏱️
@@ -751,7 +751,7 @@ export const PackageResultView: React.FC<PackageResultViewProps> = ({
                         value={customPrompt}
                         onChange={(e) => setCustomPrompt(e.target.value)}
                         placeholder="예) 소방서 협조 요청 사항을 더 강조해줘"
-                        className="flex-1 text-xs text-slate-900 px-3 py-2 rounded-md border border-slate-200 focus:outline-hidden focus:ring-2 focus:ring-blue-600 font-medium"
+                        className="flex-1 text-xs text-slate-900 px-3 py-2 rounded-md border border-slate-200 focus:outline-hidden focus:ring-2 focus:ring-emerald-600 font-medium"
                       />
                       <button
                         type="button"
@@ -760,7 +760,7 @@ export const PackageResultView: React.FC<PackageResultViewProps> = ({
                           onQuickRewrite(activeTab, "custom", customPrompt);
                           setCustomPrompt("");
                         }}
-                        className="px-3 py-2 bg-blue-900 hover:bg-blue-800 disabled:bg-slate-200 text-white rounded-md text-xs font-bold shrink-0 transition-colors shadow-2xs"
+                        className="px-3 py-2 bg-emerald-800 hover:bg-emerald-700 disabled:bg-slate-200 text-white rounded-md text-xs font-bold shrink-0 transition-colors shadow-2xs"
                       >
                         적용
                       </button>
@@ -768,8 +768,8 @@ export const PackageResultView: React.FC<PackageResultViewProps> = ({
                   </div>
 
                   {isRewriting && (
-                    <div className="p-3 bg-blue-50 border border-blue-200 rounded-lg flex items-center gap-2 text-xs text-blue-800">
-                      <Sparkles className="w-4 h-4 animate-spin text-blue-600" />
+                    <div className="p-3 bg-emerald-50 border border-emerald-200 rounded-lg flex items-center gap-2 text-xs text-emerald-900">
+                      <Sparkles className="w-4 h-4 animate-spin text-emerald-600" />
                       <span>AI가 지시사항에 맞춰 문서를 정밀하게 재작성하고 있습니다...</span>
                     </div>
                   )}
@@ -804,7 +804,7 @@ export const PackageResultView: React.FC<PackageResultViewProps> = ({
                             }}
                             className={`px-2.5 py-1 rounded-md text-xs font-semibold transition-colors ${
                               selectedDocIndex === idx
-                                ? "bg-blue-900 text-white shadow-2xs"
+                                ? "bg-emerald-800 text-white shadow-2xs"
                                 : "bg-slate-100 text-slate-700 hover:bg-slate-200"
                             }`}
                           >
@@ -824,12 +824,12 @@ export const PackageResultView: React.FC<PackageResultViewProps> = ({
                           </div>
 
                           {selectedSourceHighlight && (
-                            <div className="p-2 bg-blue-50 border border-blue-200 rounded text-xs text-blue-900 flex items-center justify-between">
+                            <div className="p-2 bg-emerald-50 border border-emerald-200 rounded text-xs text-emerald-900 flex items-center justify-between">
                               <span>선택된 출처: <strong>{selectedSourceHighlight}</strong></span>
                               <button
                                 type="button"
                                 onClick={() => setSelectedSourceHighlight(null)}
-                                className="text-[11px] text-blue-700 underline"
+                                className="text-[11px] text-emerald-700 underline"
                               >
                                 하이라이트 해제
                               </button>

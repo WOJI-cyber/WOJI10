@@ -127,7 +127,7 @@ export const UploadSection: React.FC<UploadSectionProps> = ({
     if (ext === "xlsx" || ext === "xls" || ext === "csv") {
       return <FileSpreadsheet className="w-5 h-5 text-emerald-600" />;
     }
-    return <FileText className="w-5 h-5 text-blue-600" />;
+    return <FileText className="w-5 h-5 text-emerald-700" />;
   };
 
   return (
@@ -143,8 +143,8 @@ export const UploadSection: React.FC<UploadSectionProps> = ({
         onClick={() => fileInputRef.current?.click()}
         className={`border-2 border-dashed rounded-2xl p-8 sm:p-14 text-center cursor-pointer transition-all min-h-[280px] sm:min-h-[320px] flex flex-col items-center justify-center ${
           isDragging
-            ? "border-blue-600 bg-blue-50/90 scale-[1.01] shadow-md ring-4 ring-blue-100"
-            : "border-slate-300 hover:border-blue-400 bg-slate-50/40 hover:bg-blue-50/20"
+            ? "border-emerald-600 bg-emerald-50/90 scale-[1.01] shadow-md ring-4 ring-emerald-100"
+            : "border-slate-300 hover:border-emerald-500 bg-slate-50/40 hover:bg-emerald-50/30"
         }`}
         id="file-dropzone"
       >
@@ -157,7 +157,7 @@ export const UploadSection: React.FC<UploadSectionProps> = ({
           onChange={(e) => handleFiles(e.target.files)}
         />
         <div className="flex flex-col items-center justify-center space-y-4 max-w-2xl mx-auto">
-          <div className="w-16 h-16 sm:w-20 sm:h-20 rounded-2xl bg-blue-100/70 text-blue-700 flex items-center justify-center shadow-xs border border-blue-200">
+          <div className="w-16 h-16 sm:w-20 sm:h-20 rounded-2xl bg-emerald-100/80 text-emerald-800 flex items-center justify-center shadow-xs border border-emerald-200">
             <UploadCloud className="w-8 h-8 sm:w-10 sm:h-10" />
           </div>
 
@@ -177,7 +177,7 @@ export const UploadSection: React.FC<UploadSectionProps> = ({
                 e.stopPropagation();
                 fileInputRef.current?.click();
               }}
-              className="inline-flex items-center gap-2 px-5 py-2.5 rounded-xl bg-blue-900 hover:bg-blue-800 text-white font-bold text-xs sm:text-sm shadow-sm transition-all active:scale-95"
+              className="inline-flex items-center gap-2 px-5 py-2.5 rounded-xl bg-emerald-800 hover:bg-emerald-700 text-white font-bold text-xs sm:text-sm shadow-sm transition-all active:scale-95"
             >
               <FileUp className="w-4 h-4" />
               <span>내 컴퓨터에서 파일 선택</span>
@@ -193,7 +193,7 @@ export const UploadSection: React.FC<UploadSectionProps> = ({
             <span className="text-slate-400 font-normal">· 파일당 최대 20MB</span>
           </div>
 
-          <div className="inline-flex items-center gap-1.5 text-[11px] text-blue-800 bg-blue-50/80 border border-blue-200 px-3 py-1.5 rounded-lg">
+          <div className="inline-flex items-center gap-1.5 text-[11px] text-emerald-900 bg-emerald-50/80 border border-emerald-200 px-3 py-1.5 rounded-lg">
             <span>💡 <strong>한글(HWP) 문서</strong>는 본문을 복사하여 아래 [직접 입력창]에 붙여넣으시면 동일하게 분석됩니다.</span>
           </div>
         </div>
@@ -239,7 +239,7 @@ export const UploadSection: React.FC<UploadSectionProps> = ({
                           </span>
                         )}
                         {file.status === "processing" && (
-                          <span className="inline-flex items-center gap-1 text-[11px] font-medium text-blue-700 bg-blue-50 px-1.5 py-0.5 rounded border border-blue-200 shrink-0 animate-pulse">
+                          <span className="inline-flex items-center gap-1 text-[11px] font-medium text-emerald-700 bg-emerald-50 px-1.5 py-0.5 rounded border border-emerald-200 shrink-0 animate-pulse">
                             분석 중...
                           </span>
                         )}
@@ -307,7 +307,7 @@ export const UploadSection: React.FC<UploadSectionProps> = ({
             htmlFor="direct-notes"
             className="text-xs font-bold text-slate-800 flex items-center gap-1.5"
           >
-            <FileText className="w-4 h-4 text-blue-600" />
+            <FileText className="w-4 h-4 text-emerald-700" />
             <span>직접 입력 텍스트 / 실무 메모 / 한글(HWP) 본문 복사 붙여넣기</span>
           </label>
           <span className="text-[11px] text-slate-500">
@@ -320,7 +320,7 @@ export const UploadSection: React.FC<UploadSectionProps> = ({
           value={directText}
           onChange={(e) => onDirectTextChange(e.target.value)}
           placeholder="회의와 관련하여 추가로 반영할 메모나 과장님/소장님 구두 지시사항, 한글(HWP) 문서의 텍스트를 이곳에 편하게 적어주세요. AI가 문서들과 함께 종합 분석합니다."
-          className="w-full text-xs text-slate-800 p-3 rounded-lg border border-slate-200 focus:outline-hidden focus:ring-2 focus:ring-blue-600 focus:border-transparent resize-y bg-slate-50/50 placeholder:text-slate-400 leading-relaxed font-sans"
+          className="w-full text-xs text-slate-800 p-3 rounded-lg border border-slate-200 focus:outline-hidden focus:ring-2 focus:ring-emerald-600 focus:border-transparent resize-y bg-slate-50/50 placeholder:text-slate-400 leading-relaxed font-sans"
         />
       </div>
     </div>

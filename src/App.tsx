@@ -224,7 +224,7 @@ export default function App() {
   const canSubmit = meetingInfo.title.trim().length > 0;
 
   return (
-    <div className="min-h-screen bg-slate-100/70 text-slate-900 flex flex-col font-sans selection:bg-blue-100 selection:text-blue-900">
+    <div className="min-h-screen bg-slate-100/70 text-slate-900 flex flex-col font-sans selection:bg-emerald-100 selection:text-emerald-900">
       {/* Header */}
       <Header
         onOpenHelp={() => setIsHelpOpen(true)}
@@ -232,7 +232,7 @@ export default function App() {
         hasActiveData={!!generatedData}
       />
 
-      {/* Security Notice Banner */}
+      {/* Notice Banner */}
       <NoticeBanner />
 
       {/* Main Container */}
@@ -244,7 +244,7 @@ export default function App() {
               <button
                 type="button"
                 onClick={() => setGeneratedData(null)}
-                className="inline-flex items-center gap-1.5 text-xs font-bold text-slate-600 hover:text-blue-900 hover:bg-white px-3 py-1.5 rounded-lg border border-slate-200 transition-colors"
+                className="inline-flex items-center gap-1.5 text-xs font-bold text-slate-600 hover:text-emerald-900 hover:bg-white px-3 py-1.5 rounded-lg border border-slate-200 transition-colors"
               >
                 <RotateCcw className="w-3.5 h-3.5" />
                 <span>회의 설정 및 자료 업로드 수정하기</span>
@@ -273,7 +273,7 @@ export default function App() {
               <div className="flex items-center justify-between border-b border-slate-100 pb-4">
                 <div>
                   <h2 className="text-base sm:text-lg font-bold text-slate-900 flex items-center gap-2.5">
-                    <span className="w-6 h-6 rounded-full bg-blue-900 text-white flex items-center justify-center text-xs font-bold">
+                    <span className="w-6 h-6 rounded-full bg-emerald-800 text-white flex items-center justify-center text-xs font-bold">
                       1
                     </span>
                     <span>회의 관련 자료 업로드 & 텍스트 추출</span>
@@ -317,7 +317,7 @@ export default function App() {
                       key={m.id}
                       className="p-3 rounded-lg border border-slate-200 bg-slate-50 text-left space-y-1"
                     >
-                      <span className="text-[10px] font-bold text-blue-700 bg-blue-100 px-1.5 py-0.5 rounded">
+                      <span className="text-[10px] font-bold text-emerald-700 bg-emerald-100 px-1.5 py-0.5 rounded">
                         {m.type}
                       </span>
                       <p className="text-xs font-bold text-slate-900 line-clamp-1">{m.title}</p>

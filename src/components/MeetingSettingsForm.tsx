@@ -53,7 +53,7 @@ export const MeetingSettingsForm: React.FC<MeetingSettingsFormProps> = ({
       <div className="flex items-center justify-between border-b border-slate-100 pb-3">
         <div>
           <h2 className="text-sm font-bold text-slate-900 flex items-center gap-2">
-            <FileCheck2 className="w-4 h-4 text-blue-700" />
+            <FileCheck2 className="w-4 h-4 text-emerald-700" />
             <span>회의 설정 및 주요 안건 정의</span>
           </h2>
           <p className="text-xs text-slate-500 mt-0.5">
@@ -81,7 +81,7 @@ export const MeetingSettingsForm: React.FC<MeetingSettingsFormProps> = ({
             value={meetingInfo.title}
             onChange={(e) => updateField("title", e.target.value)}
             placeholder="예) 2026년 3분기 감염병 대응 유관기관 협의체 회의"
-            className="w-full text-xs text-slate-900 px-3 py-2 rounded-md border border-slate-200 focus:outline-hidden focus:ring-2 focus:ring-blue-600 focus:border-transparent font-medium"
+            className="w-full text-xs text-slate-900 px-3 py-2 rounded-md border border-slate-200 focus:outline-hidden focus:ring-2 focus:ring-emerald-600 focus:border-transparent font-medium"
           />
         </div>
 
@@ -97,7 +97,7 @@ export const MeetingSettingsForm: React.FC<MeetingSettingsFormProps> = ({
             id="meeting-type"
             value={meetingInfo.type}
             onChange={(e) => updateField("type", e.target.value as MeetingType)}
-            className="w-full text-xs text-slate-900 px-3 py-2 rounded-md border border-slate-200 focus:outline-hidden focus:ring-2 focus:ring-blue-600 focus:border-transparent bg-white font-medium"
+            className="w-full text-xs text-slate-900 px-3 py-2 rounded-md border border-slate-200 focus:outline-hidden focus:ring-2 focus:ring-emerald-600 focus:border-transparent bg-white font-medium"
           >
             {MEETING_TYPES.map((t) => (
               <option key={t} value={t}>
@@ -122,7 +122,7 @@ export const MeetingSettingsForm: React.FC<MeetingSettingsFormProps> = ({
               value={meetingInfo.target}
               onChange={(e) => updateField("target", e.target.value)}
               placeholder="예) 보건소장, 건강증진과장, 경찰서·소방서 실무자"
-              className="w-full text-xs text-slate-900 pl-8 pr-3 py-2 rounded-md border border-slate-200 focus:outline-hidden focus:ring-2 focus:ring-blue-600 focus:border-transparent font-medium"
+              className="w-full text-xs text-slate-900 pl-8 pr-3 py-2 rounded-md border border-slate-200 focus:outline-hidden focus:ring-2 focus:ring-emerald-600 focus:border-transparent font-medium"
             />
             <Users className="w-3.5 h-3.5 text-slate-400 absolute left-2.5 top-2.5" />
           </div>
@@ -144,7 +144,7 @@ export const MeetingSettingsForm: React.FC<MeetingSettingsFormProps> = ({
               value={meetingInfo.datetime}
               onChange={(e) => updateField("datetime", e.target.value)}
               placeholder="예) 2026. 09. 25.(금) 14:00"
-              className="w-full text-xs text-slate-900 pl-8 pr-3 py-2 rounded-md border border-slate-200 focus:outline-hidden focus:ring-2 focus:ring-blue-600 focus:border-transparent font-medium"
+              className="w-full text-xs text-slate-900 pl-8 pr-3 py-2 rounded-md border border-slate-200 focus:outline-hidden focus:ring-2 focus:ring-emerald-600 focus:border-transparent font-medium"
             />
             <Calendar className="w-3.5 h-3.5 text-slate-400 absolute left-2.5 top-2.5" />
           </div>
@@ -165,7 +165,7 @@ export const MeetingSettingsForm: React.FC<MeetingSettingsFormProps> = ({
               value={meetingInfo.duration}
               onChange={(e) => updateField("duration", e.target.value)}
               placeholder="예) 60분"
-              className="w-full text-xs text-slate-900 pl-8 pr-3 py-2 rounded-md border border-slate-200 focus:outline-hidden focus:ring-2 focus:ring-blue-600 focus:border-transparent font-medium"
+              className="w-full text-xs text-slate-900 pl-8 pr-3 py-2 rounded-md border border-slate-200 focus:outline-hidden focus:ring-2 focus:ring-emerald-600 focus:border-transparent font-medium"
             />
             <Clock className="w-3.5 h-3.5 text-slate-400 absolute left-2.5 top-2.5" />
           </div>
@@ -186,7 +186,7 @@ export const MeetingSettingsForm: React.FC<MeetingSettingsFormProps> = ({
             value={meetingInfo.purposeAndAgendas}
             onChange={(e) => updateField("purposeAndAgendas", e.target.value)}
             placeholder="회의를 개최하는 목적과 반드시 다루어야 할 핵심 안건을 작성해 주세요. (예: 1. 야간 응급이송 핫라인 일원화 구축, 2. 4분기 합동 훈련 일정 협의)"
-            className="w-full text-xs text-slate-900 p-3 rounded-md border border-slate-200 focus:outline-hidden focus:ring-2 focus:ring-blue-600 focus:border-transparent resize-y font-medium placeholder:text-slate-400 leading-relaxed"
+            className="w-full text-xs text-slate-900 p-3 rounded-md border border-slate-200 focus:outline-hidden focus:ring-2 focus:ring-emerald-600 focus:border-transparent resize-y font-medium placeholder:text-slate-400 leading-relaxed"
           />
         </div>
 
@@ -205,7 +205,7 @@ export const MeetingSettingsForm: React.FC<MeetingSettingsFormProps> = ({
             value={meetingInfo.decisionItems}
             onChange={(e) => updateField("decisionItems", e.target.value)}
             placeholder="회의 종료 시 최종 합의 또는 재가받아야 할 구체적인 결정 과제를 적어주세요. (예: 기관별 전담 연락관 지정 여부 및 훈련 예산 1,200만원 분담률 확정)"
-            className="w-full text-xs text-slate-900 p-3 rounded-md border border-slate-200 focus:outline-hidden focus:ring-2 focus:ring-blue-600 focus:border-transparent resize-y font-medium placeholder:text-slate-400 leading-relaxed"
+            className="w-full text-xs text-slate-900 p-3 rounded-md border border-slate-200 focus:outline-hidden focus:ring-2 focus:ring-emerald-600 focus:border-transparent resize-y font-medium placeholder:text-slate-400 leading-relaxed"
           />
         </div>
       </div>
@@ -219,12 +219,12 @@ export const MeetingSettingsForm: React.FC<MeetingSettingsFormProps> = ({
           className={`w-full py-3.5 px-6 rounded-xl font-bold text-sm shadow-md flex items-center justify-center gap-2 transition-all ${
             !canSubmit || isLoading
               ? "bg-slate-200 text-slate-400 cursor-not-allowed"
-              : "bg-blue-900 hover:bg-blue-800 text-white active:scale-[0.99]"
+              : "bg-emerald-800 hover:bg-emerald-700 text-white active:scale-[0.99]"
           }`}
         >
           {isLoading ? (
             <>
-              <Loader2 className="w-5 h-5 animate-spin text-blue-200" />
+              <Loader2 className="w-5 h-5 animate-spin text-emerald-200" />
               <span>AI가 공문서 원문 대조 및 9종 회의 패키지 생성 중입니다 (약 15~20초)...</span>
             </>
           ) : (

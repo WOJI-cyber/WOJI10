@@ -19,15 +19,15 @@ export const Header: React.FC<HeaderProps> = ({ onOpenHelp, onReset, hasActiveDa
               className="flex items-center gap-2.5 text-left focus:outline-hidden group"
               title="메인 화면으로 이동"
             >
-              <div className="w-10 h-10 rounded-lg bg-slate-900 text-white flex items-center justify-center font-bold shadow-xs group-hover:bg-blue-800 transition-colors">
-                <Building2 className="w-5 h-5 text-blue-300" />
+              <div className="w-10 h-10 rounded-lg bg-emerald-900 text-white flex items-center justify-center font-bold shadow-xs group-hover:bg-emerald-800 transition-colors">
+                <Building2 className="w-5 h-5 text-emerald-300" />
               </div>
               <div>
                 <div className="flex items-center gap-2">
-                  <span className="text-lg font-bold tracking-tight text-slate-900 group-hover:text-blue-900 transition-colors">
+                  <span className="text-lg font-bold tracking-tight text-slate-900 group-hover:text-emerald-900 transition-colors">
                     회의자료 생성기
                   </span>
-                  <span className="inline-flex items-center px-2 py-0.5 rounded-full text-xs font-semibold bg-blue-50 text-blue-700 border border-blue-200">
+                  <span className="inline-flex items-center px-2 py-0.5 rounded-full text-xs font-semibold bg-emerald-50 text-emerald-800 border border-emerald-200">
                     지자체 보건소 특화
                   </span>
                 </div>

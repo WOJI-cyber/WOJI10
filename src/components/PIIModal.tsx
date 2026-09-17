@@ -54,7 +54,7 @@ export const PIIModal: React.FC<PIIModalProps> = ({
             type="button"
             onClick={onMaskAndProceed}
             id="btn-mask-pii"
-            className="w-full py-2.5 px-4 rounded-lg bg-blue-900 hover:bg-blue-800 text-white text-xs font-bold flex items-center justify-center gap-2 shadow-xs transition-colors"
+            className="w-full py-2.5 px-4 rounded-lg bg-emerald-800 hover:bg-emerald-700 text-white text-xs font-bold flex items-center justify-center gap-2 shadow-xs transition-colors"
           >
             <ShieldCheck className="w-4 h-4 text-emerald-400" />
             <span>자동 마스킹 처리 후 계속하기 (권장)</span>

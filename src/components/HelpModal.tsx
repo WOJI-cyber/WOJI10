@@ -14,12 +14,12 @@ export const HelpModal: React.FC<HelpModalProps> = ({ isOpen, onClose }) => {
       <div className="bg-white rounded-2xl max-w-2xl w-full p-6 shadow-2xl border border-slate-200 max-h-[90vh] overflow-y-auto space-y-5 animate-in fade-in zoom-in-95 duration-150">
         <div className="flex items-center justify-between border-b border-slate-100 pb-3">
           <div className="flex items-center gap-2.5">
-            <div className="w-8 h-8 rounded-lg bg-blue-900 text-white flex items-center justify-center font-bold">
-              <Building2 className="w-4 h-4 text-blue-300" />
+            <div className="w-8 h-8 rounded-lg bg-emerald-800 text-white flex items-center justify-center font-bold">
+              <Building2 className="w-4 h-4 text-emerald-300" />
             </div>
             <div>
               <h2 className="text-base font-bold text-slate-900">
-                GovMeeting AI 실무 활용 가이드
+                회의자료 생성기 실무 활용 가이드
               </h2>
               <p className="text-xs text-slate-500">
                 지방자치단체 보건소 공무원을 위한 15분 회의 준비 팁
@@ -37,7 +37,7 @@ export const HelpModal: React.FC<HelpModalProps> = ({ isOpen, onClose }) => {
         {/* Section 1: 회의 패키지 9종 구성 안내 */}
         <div className="space-y-2">
           <h3 className="text-xs font-bold text-slate-900 flex items-center gap-1.5">
-            <Sparkles className="w-3.5 h-3.5 text-blue-600" />
+            <Sparkles className="w-3.5 h-3.5 text-emerald-600" />
             <span>1회 입력으로 자동 생성되는 맞춤형 회의 패키지 9종</span>
           </h3>
           <div className="grid grid-cols-1 sm:grid-cols-3 gap-2 text-xs">
@@ -100,7 +100,7 @@ export const HelpModal: React.FC<HelpModalProps> = ({ isOpen, onClose }) => {
         {/* Section 3: 한글(HWP) 및 온나라 전자결재 연동 팁 */}
         <div className="space-y-2 text-xs text-slate-700">
           <h3 className="font-bold text-slate-900 flex items-center gap-1.5">
-            <FileText className="w-3.5 h-3.5 text-blue-600" />
+            <FileText className="w-3.5 h-3.5 text-emerald-700" />
             <span>한글(HWP) 프로그램 붙여넣기 및 다운로드 팁</span>
           </h3>
           <ul className="space-y-1 list-disc list-inside text-slate-600 leading-relaxed pl-1">
@@ -120,7 +120,7 @@ export const HelpModal: React.FC<HelpModalProps> = ({ isOpen, onClose }) => {
           <button
             type="button"
             onClick={onClose}
-            className="px-4 py-2 bg-blue-900 text-white rounded-lg text-xs font-bold hover:bg-blue-800 transition-colors"
+            className="px-4 py-2 bg-emerald-800 text-white rounded-lg text-xs font-bold hover:bg-emerald-700 transition-colors"
           >
             확인 및 닫기
           </button>
